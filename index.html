@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+.about-me, .projects {
+    margin: 20px 0;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+    
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi Portafolio</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a mi Portafolio</h1>
+    </header>
+
+    <section class="about-me">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador web apasionado por crear sitios atractivos y funcionales.</p>
+    </section>
+
+    <section class="projects">
+        <h2>Proyectos</h2>
+        <div class="project" id="project1">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1</p>
+        </div>
+        <div class="project" id="project2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contacto: <a href="mailto:miemail@example.com">miemail@example.com</a></p>
+    </footer>
+
+    <script>// Añade un evento para mostrar una alerta al hacer clic en un proyecto
+document.getElementById("project1").addEventListener("click", function() {
+    alert("Has hecho clic en el Proyecto 1");
+});
+
+document.getElementById("project2").addEventListener("click", function() {
+    alert("Has hecho clic en el Proyecto 2");
+});
+</script>
+</body>
+</html>
